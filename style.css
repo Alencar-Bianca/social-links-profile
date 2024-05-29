@@ -1,7 +1,8 @@
 :root {
   --white:  #ffffff;
   --black:  #141414;
-  --grey:  #333333;
+  --grey:  #afaeae; 
+  --grey2:   #333333; 
   --dark-grey:  #1f1f1f;
   --green: #c5f82a;
 }
@@ -13,8 +14,10 @@
   margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
 }
 body, html {
   height: 100%;
@@ -25,20 +28,21 @@ main {
   display: grid;
   place-items: center;
   color: var(--white);
-  background-color: var(--dark-grey);
+  background-color: var(--black);
+  padding: 0 2%;
 }
 
 section {
   width: 100%;
   max-width: 500px;
-  background-color: var(--grey);
+  background-color: var(--dark-grey);
   text-align: center;
   border-radius: 10px;
-  padding: 50px 2%;
+  padding: 50px 3%;
 }
 
 .image {
-  width: 100px;
+  width: 120px;
   border-radius: 50%;
 }
 
@@ -51,4 +55,32 @@ section {
 }
 .info-person {
   margin: 20px 0;
+}
+
+.state {
+  margin-top: 4px;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.about-me {
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.links li a {
+  color: var(--white);
+  font-weight: 500;
+  display: block;
+  background-color: var(--grey2);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+.links li a:hover { 
+  background-color: var(--green);
+  color: var(--dark-grey);
+  transition: ease  1s;
 }
