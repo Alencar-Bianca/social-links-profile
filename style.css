@@ -1,0 +1,42 @@
+:root {
+  --white:  #ffffff;
+  --black:  #141414;
+  --grey:  #333333;
+  --dark-grey:  #1f1f1f;
+  --green: #c5f82a;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body, html {
+  height: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+section {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--grey);
+  text-align: center;
+  border-radius: 10px;
+}
+.image {
+  width: 100px;
+  border-radius: 50%;
+}
